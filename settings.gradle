@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='Accessibility Study'
+rootProject.name='Accessibility Application'

@@ -7,25 +7,37 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tvFirst"
+        android:id="@+id/firstView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:text="@string/first_text"
-        app:layout_constraintBottom_toTopOf="@id/tvSecond"
+        app:layout_constraintBottom_toTopOf="@id/secondView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvSecond"
+        android:id="@+id/secondView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:text="@string/second_text"
+        app:layout_constraintBottom_toTopOf="@id/thirdView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@id/thirdView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstView" />
+
+    <TextView
+        android:id="@+id/thirdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/third_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvFirst" />
+        app:layout_constraintTop_toBottomOf="@id/secondView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
