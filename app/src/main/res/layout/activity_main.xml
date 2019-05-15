@@ -1,43 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:showIn=".MainActivity">
 
     <TextView
-        android:id="@+id/firstView"
-        android:layout_width="wrap_content"
+        android:id="@+id/tvFocusOrderActivity"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="@string/first_text"
-        app:layout_constraintBottom_toTopOf="@id/secondView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/focus_order_activity_title"
+        android:textColor="@color/colorPrimaryText" />
 
     <TextView
-        android:id="@+id/secondView"
-        android:layout_width="wrap_content"
+        android:id="@+id/tvNoToolbarActivity"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="@string/second_text"
-        app:layout_constraintBottom_toTopOf="@id/thirdView"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:contentDescription="@id/thirdView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/firstView" />
+        android:text="@string/no_toolbar_activity_title"
+        android:textColor="@color/colorPrimaryText" />
 
-    <TextView
-        android:id="@+id/thirdView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:text="@string/third_text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/secondView" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
