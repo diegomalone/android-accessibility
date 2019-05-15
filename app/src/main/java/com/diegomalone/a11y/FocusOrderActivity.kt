@@ -14,11 +14,19 @@ class FocusOrderActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_focus_order)
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+
         ViewCompat.setAccessibilityDelegate(secondView, object : AccessibilityDelegateCompat() {
             override fun onInitializeAccessibilityNodeInfo(host: View?, info: AccessibilityNodeInfoCompat?) {
                 info?.setTraversalAfter(thirdView)
                 super.onInitializeAccessibilityNodeInfo(host, info)
             }
         })
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

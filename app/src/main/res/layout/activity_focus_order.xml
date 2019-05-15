@@ -25,7 +25,6 @@
         android:text="@string/second_text"
         app:layout_constraintBottom_toTopOf="@id/thirdView"
         app:layout_constraintEnd_toEndOf="parent"
-        android:contentDescription="@id/thirdView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/firstView" />
 
