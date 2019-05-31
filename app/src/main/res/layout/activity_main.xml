@@ -30,4 +30,12 @@
         android:text="@string/list_activity_title"
         android:textColor="@color/colorPrimaryText" />
 
+    <TextView
+        android:id="@+id/tvAndroidWidgetsActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/android_widgets_activity_title"
+        android:textColor="@color/colorPrimaryText" />
+
 </LinearLayout>

@@ -18,9 +18,18 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ListActivity" />
-        <activity android:name=".FocusOrderActivity" />
-        <activity android:name=".NoToolbarActivity" android:theme="@style/NoToolbarTheme" />
+        <activity
+            android:name=".ListActivity"
+            android:label="@string/list_activity_title" />
+        <activity
+            android:name=".FocusOrderActivity"
+            android:label="@string/focus_order_activity_title" />
+        <activity
+            android:name=".NoToolbarActivity"
+            android:theme="@style/NoToolbarTheme" />
+        <activity
+            android:name=".AndroidWidgetsActivity"
+            android:label="@string/android_widgets_activity_title" />
     </application>
 
 </manifest>

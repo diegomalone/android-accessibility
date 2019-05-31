@@ -13,4 +13,10 @@
     <string name="cd_no_toolbar_activity_close_button">Close</string>
 
     <string name="list_activity_title">List Activity</string>
+
+    <string name="android_widgets_activity_title">Android Widgets</string>
+    <string name="android_widgets_activity_text_view">This is a TextView with <a href="http://www.google.com">Link</a> to StackOverflow: http://www.stackoverflow.com, and to Android Documentation: https://developer.android.com.</string>
+    <string name="android_widgets_activity_button">My button</string>
+    <string name="a11y_android_widgets_image_button_content_description">Android button</string>
+    <string name="a11y_android_widgets_image_content_description">Android icon</string>
 </resources>

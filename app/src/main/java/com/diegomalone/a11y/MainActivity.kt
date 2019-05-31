@@ -22,5 +22,9 @@ class MainActivity : AppCompatActivity() {
         tvListActivity.setOnClickListener {
             startActivity(Intent(this, ListActivity::class.java))
         }
+
+        tvAndroidWidgetsActivity.setOnClickListener {
+            startActivity(Intent(this, AndroidWidgetsActivity::class.java))
+        }
     }
 }
