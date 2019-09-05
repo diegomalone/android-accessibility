@@ -19,8 +19,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, NoToolbarActivity::class.java))
         }
 
-        tvListActivity.setOnClickListener {
-            startActivity(Intent(this, ListActivity::class.java))
+        tvCounterActivity.setOnClickListener {
+            startActivity(Intent(this, CounterActivity::class.java))
         }
 
         tvAndroidWidgetsActivity.setOnClickListener {

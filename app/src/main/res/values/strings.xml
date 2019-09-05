@@ -19,4 +19,6 @@
     <string name="android_widgets_activity_button">My button</string>
     <string name="a11y_android_widgets_image_button_content_description">Android button</string>
     <string name="a11y_android_widgets_image_content_description">Android icon</string>
+
+    <string name="counter_activity_title">Counter activity</string>
 </resources>
