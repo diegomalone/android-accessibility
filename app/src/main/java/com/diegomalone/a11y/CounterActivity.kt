@@ -2,6 +2,8 @@ package com.diegomalone.a11y
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.ViewCompat.ACCESSIBILITY_LIVE_REGION_POLITE
 import kotlinx.android.synthetic.main.activity_counter.*
 
 class CounterActivity : AppCompatActivity() {
@@ -21,6 +23,8 @@ class CounterActivity : AppCompatActivity() {
         decreaseButton.setOnClickListener {
             updateCounter(false)
         }
+
+         // ViewCompat.setAccessibilityLiveRegion(counterTextView, ACCESSIBILITY_LIVE_REGION_POLITE)
     }
 
     private fun updateCounter(increase: Boolean) {
